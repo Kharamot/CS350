@@ -8,20 +8,20 @@ for i in range(0, 1024):
 	file.write(str(x))
 	file.write("\n")
 
-for i in range(0, 1024):
-	x = random.randint(0,1023)
-	file.write(str(x))
-	file.write(" ")
-	x = random.randint(0,1023)
-	file.write(str(x))
-	file.write("\n")
+#for i in range(0, 1024):
+#	x = random.randint(0,1023)
+#	file.write(str(x))
+#	file.write(" ")
+#	x = random.randint(0,1023)
+#	file.write(str(x))
+#	file.write("\n")
 file.close()
 
 file = open("graph.txt", "r")
 fileContents = file.read()
 file.close()
 fileContents = fileContents.split()
-print(fileContents)
+#print(fileContents)
 nums = []
 #print len(fileContents)
 numNodes = len(fileContents)/2
